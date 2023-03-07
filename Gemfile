@@ -51,3 +51,6 @@ gem 'rubocop', '>= 1.0', '< 2.0'
 
 # gem to handle database connection
 gem 'dotenv-rails', '~> 2.8'
+
+# gem fake data
+gem 'faker'

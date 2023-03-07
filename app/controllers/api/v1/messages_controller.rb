@@ -1,9 +1,9 @@
-class MessagesController < ApplicationController
+class Api::V1::MessagesController < ApplicationController
   before_action :set_message, only: %i[ show update destroy ]
 
   # GET /messages
   def index
-    @messages = Message.all
+    @messages = Message.all.sample
 
     render json: @messages
   end
@@ -18,7 +18,7 @@ class MessagesController < ApplicationController
     @message = Message.new(message_params)
 
     if @message.save
-      render json: @message, status: :created, location: @message
+      render json: @message, status: :created, location: api_v1_post_path(@message)
     else
       render json: @message.errors, status: :unprocessable_entity
     end
