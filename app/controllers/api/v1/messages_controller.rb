@@ -44,7 +44,7 @@ class Api::V1::MessagesController < ApplicationController
   def set_message
     @message = Message.find(params[:id])
   end
-  
+
   # Only allow a list of trusted parameters through.
   def message_params
     params.require(:message).permit(:text)
