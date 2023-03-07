@@ -23,7 +23,7 @@
 # 📖 Hello-rails-back-end <a name="about-project"></a>
 
 This project is the back-end half of experimenting with React/Rails in two separate repos.
-You can find the React-half [HERE](https://github.com/MattGomb/hello-react-front-end)
+You can find the React-half [HERE](https://github.com/MattGomb/hello-react-front-end/pull/1)
 
 ## 🛠 Built With <a name="built-with"></a>
 
