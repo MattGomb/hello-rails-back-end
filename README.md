@@ -105,6 +105,11 @@ rails db:create
 rails db:migrate
 ```
 
+There are a couple of prepared messages, if you don't want to add them through the console:
+```
+rails db:seed
+```
+
 To run the server, execute the following command:
 ```
 rails s` or `rails server
